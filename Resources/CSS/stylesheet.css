@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial',  sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    /* padding to make use of background color effectively */
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+col {
+    display: inline-block;
+}
+
+.section-fotos {
+    padding: 0;
+}
+
+.lista-fotos {
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+}
+
+.lista-fotos li {
+    float: left;
+    display: inline;
+    width: 25%;
+}
+
+.foto {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.lista-fotos img {
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.lista-fotos img:hover {
+    opacity: 1;
+    /* prevents white line on the bottom */
+    -webkit-transform: scale(1.045);
+    transform: scale(1.045);
+}
+
+/* CLEAR THE FLOATS */
+.clearfix {
+    zoom: 1;
+}
+
+/* clear afther the element */
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/hero-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/hero-min.jpg);
+    background-size: cover; /* show the whole image */
+    background-position: center;
+    height: 100vh; /* 100% of the viewport */
+    background-attachment: fixed;
+}
+
+.header-text {
+    position: absolute; /* only way to horizontally and vertically center it */
+    width: 1140px;
+    font-size: 130%;
+    top: 30%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* this sets the reference point to be the center of the content */
+}
+
+i {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    /* methods to align text and icons */
+    line-height: 120%;
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+
+.principal {
+    text-align: center;
+    font-size: 170%;
+}
+
+.icon-big {
+    margin-left: 48%;
+    font-size: 150%;
+}
+
+.section-infos {
+    background-color: #f4f4f4;
+}
+
+.col-1-of-2 {
+    display: inline-block;
+    margin-left: 24%;
+}
+
+.col-1-of-3 {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+li {
+    line-height: 140%;
+}
+
+.section-about {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/about-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/about-min.jpg);
+    background-size: cover; /* show the whole image */
+    background-position: center;
+    height: 100vh; /* 100% of the viewport */
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.section-about h2 {
+    padding-left: 20px;
+}
+
+.section-about p {
+    margin-top: 160px;
+    width: 40%;
+    line-height: 150%;
+    word-spacing: 4px;
+    text-align: center;
+    margin-left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 40px 40px 40px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    padding-left: 0;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-instagram {
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:active {
+    color: #3b5998;
+}
+
+.ion-social-instagram:hover,
+.ion-social-instagram:active {
+    color: #125688;
+}
+
+.copyright {
+    text-align: center;
+    color: #888;
+    word-spacing: 3px;
+    margin-top: 20px;
+}
+
